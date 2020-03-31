@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- UMD css -->
+  <!-- Replace the below link to wherever you store UMD styling -->
+  <link rel="stylesheet" href="stylesheets\style.css">
+
+
+  <title>Brick Paver Search Map</title>
+
+  <style>
+
+    :root {
+      --darkwhite: #F5F5F5;
+      --white: #ffffff;
+      --red: #D1343B;
+    }
+
+    .is-darkwhite {
+      background-color: var(--darkwhite);
+    }
+
+    .is-white {
+      background-color: var(--white);
+    }
+
+    #outer {
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+    }
+
+    #inner-wrapper {
+      min-height: 100vh;
+      padding: 60px;
+    }
+
+    #header-content {
+      font-size: 18px;
+    }
+
+    .button {
+      border: 2;
+      background-color: var(--red);
+      color: var(--darkwhite);
+    }
+    .input-wrapper {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      text-align: center;
+    }
+
+    .is-wide {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="container-fluid is-darkwhite" id = "outer">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 is-white" id = "inner-wrapper">
+
+        <div class="header-wrapper">
+          <h1>Brick Paver Search</h1>
+          <hr>
+        </div>
+
+        <div class = "row" id = "err" style="display:none; font-size: 19px">
+          <div class="col-md-12 text-center">
+              Sorry, something went wrong. Please retry your query and select the location again. 
+          </div>
+          <hr>
+        </div>
+        
+        <div id = "brick-data">
+          <h3>Purchaser: <span id="purchaser-name"></span></h3>
+          <h3>Inscription: <span id="brick-inscription"></span></h3>
+          <h3>Location: <span id="brick-coords"></span></h3>
+          <h3>Quadrant: <span id="brick-quad"></span></h3>
+        </div>
+
+        <div class = "input-wrapper">
+          <a href="index.html">
+            <button class = "btn square is-wide" type = "submit">Find another brick</button>
+          </a>
+        </div>
+        <hr>
+
+        <div class = "row"> 
+          <a href="public/plaza-red.png" style="display: none" id = 'plaza-map'>
+            <div class = "col-md-12 col-xs-12">
+              <h4 style="text-align: center; margin: 3px">Legacy Plaza (click to enlarge)</h4>
+              <img class = "col-md-12 col-xs-12" src="public/plaza-red.png" alt="Legacy Plaza Map">
+            </div>
+          </a>
+          <a href="public/garden.png" style="display: none" id = 'garden-map'>
+            <div class = "col-md-12 col-xs-12">
+              <h4 style="text-align: center; margin: 3px">Moxley Gardens (click to enlarge)</h4>
+              <img class = "col-md-12 col-xs-12" src="public/garden.png" alt="Moxley Gardens Map">
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- js -->
+  <script type="text/javascript" src="mapdisplay.js"></script>
+
+</body>
+</html>
