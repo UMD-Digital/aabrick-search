@@ -38,7 +38,7 @@ search = () => {
   let inputSplit = name.trim().split(" ")
 
   let location = $("#brick-search-input-location").val();
-  let searchUrl = urlProd + '?api_key=' + api.key;
+  let searchUrl = urlProd + '?callback=&api_key=' + api.key;
 
   var queries = [];
 
@@ -53,7 +53,7 @@ search = () => {
   } else {
     queries.push(searchUrl);
   }
-  
+
   let output = []
 
   queries.forEach((query, idx) => {
@@ -122,13 +122,13 @@ search = () => {
 
       // Creates the table entry and the custom link
       $("#tableRows").append(
-        "<tr><td>"+ 
+        "<tr><td>"+
         output[i].Name+
         "</td><td>"+
         output[i].Inscription+
         "</td><td>"+
         "<a href='map.html?map=" + encodeURIComponent(locationSplit[0]) +
-        "&coords=" + (locationSplit[1]) + 
+        "&coords=" + (locationSplit[1]) +
         "&quad=" + (locationSplit[2]) +
         "&name=" + encodeURIComponent(output[i].Name) +
         "&inscription=" + encodeURIComponent(output[i].Inscription) +
