@@ -6,7 +6,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i");
-@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,900,700,700italic,900italic,500italic,500,400italic,100italic,100");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,900,700,700italic,900italic,500italic,500,400italic,100italic,100");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text");
 /* line 9, ../sass/bootstrap/_normalize.scss */
@@ -10038,7 +10038,7 @@ a.btn-tag.red:hover, a.btn-tag.red:focus {
   margin-bottom: 1em;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Image left content right card design
 
@@ -11173,7 +11173,7 @@ For full height banner images
 }
 
 /* --------------------------------
-For small banner images - sub-page layouts for 
+For small banner images - sub-page layouts for
 offic of strategic communications website
 -------------------------------- */
 /* line 117, ../sass/components/_feature-banner.scss */
@@ -11582,12 +11582,12 @@ offic of strategic communications website
 .hero-wrapper-grid {
   /*    .h-textarea .h-textarea-inner {
           top: 225px !important;
-  
+
           @include breakpoint(screen-lg) { top: 150px; }
           @include breakpoint(screen-md) { top: 150px; }
           @include breakpoint(screen-sm) { top: 150px; }
           @include breakpoint(screen-xs) { top: 150px; }
-      
+
       }*/
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -11824,7 +11824,7 @@ Scroll Down Animation
   }
 }
 
-/*-------------------------------- 
+/*--------------------------------
 
 Gallery/Card Style
 
@@ -11902,7 +11902,7 @@ Gallery/Card Style
   width: 100%;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 Duplicate gallery for three up design = 33%
 -------------------------------- */
 /* line 72, ../sass/components/_cards.scss */
@@ -11992,7 +11992,7 @@ Duplicate gallery for three up design = 33%
   text-align: left;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 Duplicate gallery for three up design = 33%
 -------------------------------- */
 /* line 152, ../sass/components/_cards.scss */
@@ -12082,8 +12082,8 @@ Duplicate gallery for three up design = 33%
   text-align: left;
 }
 
-/* -------------------------------- 
-Contents below in css format due to grid break/styles breaking 
+/* --------------------------------
+Contents below in css format due to grid break/styles breaking
 -------------------------------- */
 @media only screen and (min-width: 768px) {
   /* line 234, ../sass/components/_cards.scss */
@@ -12127,7 +12127,7 @@ Contents below in css format due to grid break/styles breaking
     transition: width 0.3s;
   }
 }
-/* -------------------------------- 
+/* --------------------------------
 
 filter cards
 
@@ -12273,8 +12273,8 @@ filter cards
   display: table;
 }
 
-/* -------------------------------- 
-Contents below in css format due to grid break/styles breaking 
+/* --------------------------------
+Contents below in css format due to grid break/styles breaking
 -------------------------------- */
 /* line 419, ../sass/components/_cards.scss */
 .card-grid .image-wrapper span {
@@ -12605,7 +12605,7 @@ a.acc-trigger:hover, a.acc-trigger:focus {
   line-height: 21px;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 Primary style
 -------------------------------- */
 /* line 4, ../sass/components/_forms.scss */
