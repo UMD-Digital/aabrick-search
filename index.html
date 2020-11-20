@@ -71,6 +71,10 @@
       color: var(--white);
     }
 
+    #click-map {
+      font-family: "Crimson Text";
+    }
+
     .input-wrapper {
       padding-left: 0 !important;
       padding-right: 0 !important;
@@ -119,30 +123,30 @@
 </head>
 <body>
 
-  <div class="container-fluid is-darkwhite" id = "outer">
+  <div class="container-fluid is-darkwhite" id="outer">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2 is-white" id = "inner-wrapper">
+      <div class="col-md-8 col-md-offset-2 is-white" id="inner-wrapper">
 
         <div class="header-wrapper">
           <h1>Brick Paver Search</h1>
-          <hr>
-          <p id = "header-content">To search for your paver location, search below using the brick purchaser's name or the text on the engraving. Refine your search if you know the general area of your brick.</p>
+          <hr aria-hidden="true" />
+          <p id="header-content">To search for your paver location, search below using the brick purchaser's name or the text on the engraving. Refine your search if you know the general area of your brick.</p>
           <p><em>Please note:  if your brick was purchased before June 30, 2020, it was installed in October 2020.  If you purchased your brick after that date, the brick will be installed in October 2021.</em></p>
         </div>
 
 
-        <h3 id = 'click-map' style="text-align: center">Click on maps to enlarge</h3>
-        <div class = "row">
+        <h2 id="click-map" class="h2 bold center">Click on maps to enlarge</h2>
+        <div class="row">
           <a href="public/plaza-red.png">
-            <div class = "col-md-6">
-              <h4 style="text-align: center">Legacy Plaza Map</h4>
-              <img class = "col-md-12" id = "paver-map" src="public/plaza-red.png" alt="Legacy Plaza Map">
+            <div class="col-md-6">
+              <h3 class="h4 bold center" aria-hidden="true">Legacy Plaza Map</h3>
+              <img class="col-md-12" id="paver-map" src="public/plaza-red.png" alt="Legacy Plaza Map, click to show full size">
             </div>
           </a>
           <a href="public/garden.png">
-            <div class = "col-md-6">
-              <h4 style="text-align: center">Moxley Gardens Map</h4>
-              <img class = "col-md-12" id = "paver-map" src="public/garden.png" alt="Moxley Gardens Map">
+            <div class="col-md-6">
+              <h3 class="h4 bold center" aria-hidden="true">Moxley Gardens Map</h3>
+              <img class="col-md-12" id="paver-map" src="public/garden.png" alt="Moxley Gardens Map, click to show full size">
             </div>
           </a>
         </div>
@@ -152,21 +156,21 @@
         <div class="form-wrapper" style="margin-bottom:50px">
 
           <div class="row" style="margin-bottom: 30px;">
-            <div class = "col-lg-3 col-lg-offset-1 col-md-5 col-md-offset-1 input-wrapper">
-              <input class = "is-wide brick-search-input" id = "brick-search-input-name" placeholder = "Name" required>
+            <div class="col-lg-3 col-lg-offset-1 col-md-5 col-md-offset-1 input-wrapper">
+              <input class="is-wide brick-search-input" id="brick-search-input-name" placeholder="Name" required>
             </div>
-            <div class = "col-lg-3 col-md-5 input-wrapper">
-              <input class = "is-wide brick-search-input" id = "brick-search-input-inscription" placeholder = "Inscription" required>
+            <div class="col-lg-3 col-md-5 input-wrapper">
+              <input class="is-wide brick-search-input" id="brick-search-input-inscription" placeholder="Inscription" required>
             </div>
-            <div class = "col-lg-2 col-md-5  col-lg-offset-0 col-md-offset-1 input-wrapper">
-              <select class = "selectpicker is-wide brick-search-input" name = "Location" id= "brick-search-input-location">
+            <div class="col-lg-2 col-md-5  col-lg-offset-0 col-md-offset-1 input-wrapper">
+              <select class="selectpicker is-wide brick-search-input" name="Location" id= "brick-search-input-location">
                 <option value="">All Locations</option>
                 <option value="Brick">Legacy Plaza</option>
                 <option value="Paver">Moxley Gardens</option>
               </select>
             </div>
-            <div class = "col-lg-2 col-md-5 input-wrapper">
-              <button class = "btn square is-wide" type = "submit" id = "brick-search-submit">Search</button>
+            <div class="col-lg-2 col-md-5 input-wrapper">
+              <button class="btn square is-wide" type="submit" id="brick-search-submit">Search</button>
             </div>
 
           </div>
@@ -174,16 +178,16 @@
         <hr>
 
         <!-- Error text, typically hidden -->
-        <div class = "row" id = "err" style="display:none; font-size: 16px">
+        <div class="row" id="err" style="display:none; font-size: 16px">
           <div class="col-md-12 text-center">
               Sorry, there are no bricks matching the search query. Please try again with another query.
           </div>
           <hr>
         </div>
 
-        <div class="row" id = "messages"></div>
-        <div class="row" style = "display:none" id = "scroll-right">
-          <div class = "col-md-12 text-center">
+        <div class="row" id="messages"></div>
+        <div class="row" style="display:none" id="scroll-right">
+          <div class="col-md-12 text-center">
             Scroll table to the right to view more information.
           </div><br>
         </div>
@@ -197,11 +201,11 @@
                 <th>Location</th>
               </tr>
             </thead>
-            <tbody id = "tableRows">
+            <tbody id="tableRows">
             </tbody>
           </table>
         </div>
-        <div class="row" id = "paver-footer"></div>
+        <div class="row" id="paver-footer"></div>
       </div>
     </div>
 
